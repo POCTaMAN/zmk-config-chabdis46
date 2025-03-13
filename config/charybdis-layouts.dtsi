@@ -3,14 +3,11 @@
 / {
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Charybdis 3x6";
-
+        display-name = "Charybdis 4x6";
         kscan = <&kscan0>;
         transform = <&default_transform>;
 
-        keys
-            // Left Half - Main Keys
-            //                       w   h    x    y     rot    rx    ry
+        keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   38       0     0     0>
             , <&key_physical_attrs 100 100  100   38       0     0     0>
             , <&key_physical_attrs 100 100  200   12       0     0     0>
@@ -29,9 +26,6 @@
             , <&key_physical_attrs 100 100  300  100       0     0     0>
             , <&key_physical_attrs 100 100  400  112       0     0     0>
             , <&key_physical_attrs 100 100  500  112       0     0     0>
-
-            // Right Half - Main Keys
-            //                       w   h    x    y     rot    rx    ry
             , <&key_physical_attrs 100 100  900  112       0     0     0>
             , <&key_physical_attrs 100 100 1000  112       0     0     0>
             , <&key_physical_attrs 100 100 1100  100       0     0     0>
@@ -50,14 +44,35 @@
             , <&key_physical_attrs 100 100 1200  212       0     0     0>
             , <&key_physical_attrs 100 100 1300  238       0     0     0>
             , <&key_physical_attrs 100 100 1400  238       0     0     0>
-
-            // Thumb Clusters
-            //                       w   h    x    y     rot    rx    ry
-            , <&key_physical_attrs 100 100  348  314       0     0     0>
-            , <&key_physical_attrs 100 100  348  314    1500   398   790>
-            , <&key_physical_attrs 100 100  348  320    3000   398   790>
-            , <&key_physical_attrs 100 100 1052  320 (-3000)  1102   790>
-            , <&key_physical_attrs 100 100 1052  314 (-1500)  1102   790>
+            , <&key_physical_attrs 100 100    0  338       0     0     0>
+            , <&key_physical_attrs 100 100  100  338       0     0     0>
+            , <&key_physical_attrs 100 100  200  312       0     0     0>
+            , <&key_physical_attrs 100 100  300  300       0     0     0>
+            , <&key_physical_attrs 100 100  400  312       0     0     0>
+            , <&key_physical_attrs 100 100  500  312       0     0     0>
+            , <&key_physical_attrs 100 100  900  312       0     0     0>
+            , <&key_physical_attrs 100 100 1000  312       0     0     0>
+            , <&key_physical_attrs 100 100 1100  300       0     0     0>
+            , <&key_physical_attrs 100 100 1200  312       0     0     0>
+            , <&key_physical_attrs 100 100 1300  338       0     0     0>
+            , <&key_physical_attrs 100 100 1400  338       0     0     0>
+            , <&key_physical_attrs 100 100  348  414       0     0     0>
+            , <&key_physical_attrs 100 100  348  414    1500   398   790>
+            , <&key_physical_attrs 100 100  348  420    3000   398   790>
+            , <&key_physical_attrs 100 100  348  514    1500   398   790>
+            , <&key_physical_attrs 100 100  348  520    3000   398   790>
+            , <&key_physical_attrs 100 100 1052  420 (-3000)  1102   790>
+            , <&key_physical_attrs 100 100 1052  414 (-1500)  1102   790>
+            , <&key_physical_attrs 100 100 1052  514 (-1500)  1102   790>
             ;
+    };
+
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        charybdis_physical_layout {
+            physical-layout = <&charybdis_physical_layout>;
+            positions = <>;
+        };
     };
 };
