@@ -90,40 +90,40 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────┬─────────────────────────────┬──────────────────────────────────┬──────────────────────┬────────╮  ╭────────────────┬─────────────────────────┬──────────────────────────────────────┬────────────────────────────────────┬────────────────────────┬──────────────╮
-    &kp ESC          &kp EXCL        &kp AT                         &lt 6 HASH                         &kp DOLLAR             &kp PERCENT &kp CARET         &kp AMPS                &kp STAR                                &kp LPAR                             &kp RPAR                 &kp BACKSPACE
+    &kp ESC            &kp EXCL        &kp AT                         &lt 6 HASH                         &kp DOLLAR             &kp PERCENT &kp CARET         &kp AMPS                &kp STAR                                &kp LPAR                             &kp RPAR                 &kp BACKSPACE
 // ├────────────────┼──────────────┼─────────────────────────────┼──────────────────────────────────┼──────────────────────┼────────┤  ├────────────────┼─────────────────────────┼──────────────────────────────────────┼────────────────────────────────────┼────────────────────────┼──────────────┤
-    &kp BACKSLASH      &kp Q           &kp W                          &kp E                              &kp R                  &kp T       &kp Y             &kp U                   &kp I                                   &kp O                                &kp P                    &td_layers
+    &kp BACKSLASH      &kp Q           &kp W                          &kp E                              &kp R                  &kp T       &kp Y             &kp U                   &kp I                                   &kp O                                &kp P                    &kp LEFT_BRACKET
 // ├────────────────┼──────────────┼─────────────────────────────┼──────────────────────────────────┼──────────────────────┼────────┤  ├────────────────┼─────────────────────────┼──────────────────────────────────────┼────────────────────────────────────┼────────────────────────┼──────────────┤
-    &hm_left LCMD TAB  &lt 3 A      &hm_left LEFT_ALT S            &hm_left LCTRL D                   &hm_left LEFT_SHIFT F  &kp G       &kp H             &hm_right RIGHT_SHIFT J  &hm_right RCTRL K                       &hm_right RIGHT_ALT L                &hm_right RCMD SEMICOLON &kp DEL
+    &hm_left LCMD TAB  &lt 3 A         &kp S                          &hm_left LCTRL D                   &hm_left LEFT_SHIFT F  &kp G       &kp H             &hm_right RIGHT_SHIFT J &hm_right RCTRL K                       &hm_right RIGHT_ALT L                &hm_right RCMD SEMICOLON &kp SINGLE_QUOTE
 // ├────────────────┼──────────────┼─────────────────────────────┼──────────────────────────────────┼──────────────────────┼────────┤  ├────────────────┼─────────────────────────┼──────────────────────────────────────┼────────────────────────────────────┼────────────────────────┼──────────────┤
-    &kp C_AC_SEARCH    &kp Z        &hm_left LC(LA(LEFT_SHIFT)) X  &hm_left LA(LC(LG(LEFT_SHIFT))) C  &kp V                  &kp B       &kp N             &kp M                   &hm_right LA(LC(LG(LEFT_SHIFT))) COMMA  &hm_right LC(LA(LEFT_SHIFT)) PERIOD  &td_home                 &clip_hist
+    &kp C_AC_SEARCH    &kp Z           &kp X                          &kp C                              &kp V                  &kp B       &kp N             &kp M                   &kp COMMA                               &kp PERIOD                           &kp QMARK                &kp RIGHT_BRACKET
 // ╰────────────────┴──────────────┴─────────────────────────────┼──────────────────────────────────┼──────────────────────┼────────┤  ├────────────────┼─────────────────────────┼──────────────────────────────────────┴────────────────────────────────────┴────────────────────────┴──────────────╯
-                                                                               &td_cursor    &mkp LCLK          &td_bs                   &lt 7 RETURN      &td_space
-                                                                                             &kp LCTRL          &kp SPACE                &kp ENTER
+                                                                               &td_cursor    &lt 1 RETURN       &mkp LCLK             &lt 7 RETURN      &lt 2 SPACE
+                                                                                             &kp LCTRL          &mkp RCLK                &kp ENTER
                                                                           // ╰─────────────┴──────────────────┴────────╯               ╰────────────────┴──────────────╯
             >;
         };
 
         NUM {
             bindings = <
-&trans   &none  &none  &none  &none          &none        &kp ASTRK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &kp F10        &none
-&trans   &none  &none  &none  &none          &none        &kp ASTRK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &kp F10        &none
-&trans   &none  &none  &none  &none          &none        &kp MINUS  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &trans
-&none    &none  &none  &none  &kp BACKSPACE  &kp SPACE    &td_equals &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F12 SLASH  &none
-                       &none  &none          &trans       &kp DOT    &kp N0
-                              &none          &trans       &kp DOT
+&trans   &none  &none  &none  &none          &none          &none      &none   &none   &none   &none       &none
+&trans   &none  &none  &none  &none          &none          &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COMMA   &none
+&trans   &none  &none  &none  &none          &kp LEFT_SHIFT &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0      &trans
+&none    &none  &none  &none  &kp BACKSPACE  &kp SPACE      &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp PERIOD  &none
+                       &none  &none          &trans         &kp DOT    &kp N0
+                              &none          &trans         &kp DOT
             >;
         };
 
         NAV {
             bindings = <
 
-&none   &none   &none   &none   &none   &none     &detach_session  &create_or_attach  &next_pane   &show_sessions  &sync_panes       &none
-&none   &none   &none   &none   &none   &none     &detach_session  &create_or_attach  &next_pane   &show_sessions  &sync_panes       &none
-&trans  &trans  &trans  &trans  &trans  &none     &h_split         &kp LEFT_ARROW     &kp DOWN     &kp UP          &kp RIGHT_ARROW   &none
-&none   &none   &none   &none   &none   &none     &v_split         &kp HOME           &kp PG_DN    &kp PG_UP       &kp END           &none
-                        &none   &none   &trans    &trans   &trans
-                                &none   &trans    &trans
+&studio_unlock  &none   &none   &kp F3  &none   &none     &detach_session  &create_or_attach  &next_pane        &show_sessions  &sync_panes       &none
+&none           &none   &none   &none   &none   &none     &kp PG_UP        &kp HOME           &kp UP_ARROW      &kp END         &sync_panes       &none
+&trans          &trans  &trans  &trans  &trans  &none     &kp PAGE_DOWN    &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW &kp DELETE        &none
+&none           &none   &none   &kp LC(C)   &none   &none     &kp CAPSLOCK     &kp HOME           &kp PG_DN         &kp PG_UP       &kp END           &none
+                                &none   &none   &trans    &trans   &trans
+                                        &none   &trans    &trans
             >;
         };
 

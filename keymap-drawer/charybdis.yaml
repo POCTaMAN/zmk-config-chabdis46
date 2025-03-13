@@ -23,10 +23,10 @@ layers:
   - I
   - O
   - P
-  - L_BASE L_PHOTO L_GAME
+  - '['
   - {t: TAB, h: LCMD}
   - {t: A, h: SYM}
-  - {t: S, h: LEFT ALT}
+  - S
   - {t: D, h: LCTRL}
   - {t: F, h: LEFT SHIFT}
   - G
@@ -35,26 +35,26 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RCMD}
-  - DEL
+  - ''''
   - SEARCH
   - Z
-  - {t: X, h: MEH}
-  - {t: C, h: HYPER}
+  - X
+  - C
   - V
   - B
   - N
   - M
-  - {t: ',', h: HYPER}
-  - {t: ., h: MEH}
-  - ~/
-  - CLIP HIST
+  - ','
+  - .
+  - '?'
+  - ']'
   - SCRL SLOW
+  - {t: RETURN, h: NUM}
   - L CLK
-  - '&td_bs'
   - {t: RETURN, h: MOUSE}
-  - '&td_space'
+  - {t: SPACE, h: NAV}
   - LCTRL
-  - SPACE
+  - R CLK
   - ENTER
   NUM:
   - {t: ▽, type: trans}
@@ -63,11 +63,11 @@ layers:
   - ''
   - ''
   - ''
-  - '*'
-  - {t: '7', h: F7}
-  - {t: '8', h: F8}
-  - {t: '9', h: F9}
-  - F10
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - {t: ▽, type: trans}
   - ''
@@ -76,22 +76,22 @@ layers:
   - ''
   - ''
   - '*'
-  - {t: '7', h: F7}
-  - {t: '8', h: F8}
-  - {t: '9', h: F9}
-  - F10
+  - '7'
+  - '8'
+  - '9'
+  - ','
   - ''
   - {t: ▽, type: trans}
   - ''
   - ''
   - ''
   - ''
-  - ''
+  - LEFT SHIFT
   - '-'
-  - {t: '4', h: F4}
-  - {t: '5', h: F5}
-  - {t: '6', h: F6}
-  - {t: +, h: F11}
+  - '4'
+  - '5'
+  - '6'
+  - '0'
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -100,13 +100,13 @@ layers:
   - BACK SPACE
   - SPACE
   - '='
-  - {t: '1', h: F1}
-  - {t: '2', h: F2}
-  - {t: '3', h: F3}
-  - {t: /, h: DEV TOOLS}
+  - '1'
+  - '2'
+  - '3'
+  - .
   - ''
   - ''
-  - ''
+  - {type: held}
   - {t: ▽, type: trans}
   - .
   - '0'
@@ -114,22 +114,10 @@ layers:
   - {t: ▽, type: trans}
   - .
   NAV:
+  - ZMK Studio
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&detach_session'
-  - '&create_or_attach'
-  - '&next_pane'
-  - '&show_sessions'
-  - '&sync_panes'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - F3
   - ''
   - ''
   - '&detach_session'
@@ -138,25 +126,37 @@ layers:
   - '&show_sessions'
   - '&sync_panes'
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PG UP
+  - HOME
+  - UP ARROW
+  - END
+  - '&sync_panes'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - HSPLIT
+  - PAGE DOWN
   - LEFT
-  - DOWN
-  - UP
+  - DOWN ARROW
   - RIGHT
+  - DELETE
   - ''
   - ''
   - ''
   - ''
+  - Ctl+ C
   - ''
   - ''
-  - ''
-  - VSPLIT
+  - CAPSLOCK
   - HOME
   - PG DN
   - PG UP
@@ -166,7 +166,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
