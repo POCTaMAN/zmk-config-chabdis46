@@ -27,12 +27,12 @@ layers:
   - {t: TAB, h: LCMD}
   - A
   - S
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
+  - D
+  - F
   - G
   - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RCTRL}
+  - J
+  - K
   - L
   - ;
   - ''''
@@ -46,16 +46,16 @@ layers:
   - M
   - ','
   - .
-  - KP SLASH
+  - /
   - ']'
   - SCRL SLOW
   - {t: RETURN, h: NUM}
   - L CLK
-  - {t: RETURN, h: NUM}
+  - LEFT SHIFT
   - {t: SPACE, h: NAV}
   - LCTRL
   - R CLK
-  - ENTER
+  - LEFT CONTROL
   NUM:
   - {t: ▽, type: trans}
   - ''
@@ -82,11 +82,11 @@ layers:
   - ','
   - ''
   - {t: ▽, type: trans}
-  - ''
+  - Ctl+ A
   - ''
   - ''
   - LEFT SHIFT
-  - ''
+  - Ctl+ %
   - '-'
   - '4'
   - '5'
@@ -107,8 +107,8 @@ layers:
   - ''
   - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - .
+  - LEFT SHIFT
+  - LEFT SHIFT
   - '0'
   - ''
   - {t: ▽, type: trans}
@@ -139,7 +139,7 @@ layers:
   - '&sync_panes'
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+ A
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -151,10 +151,10 @@ layers:
   - DELETE
   - ''
   - ''
-  - ''
+  - Ctl+ Z
   - ''
   - Ctl+ C
-  - ''
+  - Ctl+ V
   - ''
   - CAPSLOCK
   - HOME
@@ -164,7 +164,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {type: held}
   - ''
