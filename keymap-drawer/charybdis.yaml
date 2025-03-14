@@ -3,7 +3,7 @@ layers:
   - ESC
   - '!'
   - '@'
-  - {t: '#', h: EXTRAS}
+  - '#'
   - $
   - '%'
   - ^
@@ -25,7 +25,7 @@ layers:
   - P
   - '['
   - {t: TAB, h: LCMD}
-  - {t: A, h: SYM}
+  - A
   - S
   - {t: D, h: LCTRL}
   - {t: F, h: LEFT SHIFT}
@@ -33,8 +33,8 @@ layers:
   - H
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RCMD}
+  - L
+  - ;
   - ''''
   - SEARCH
   - Z
@@ -51,7 +51,7 @@ layers:
   - SCRL SLOW
   - {t: RETURN, h: NUM}
   - L CLK
-  - {t: RETURN, h: MOUSE}
+  - {t: RETURN, h: NUM}
   - {t: SPACE, h: NAV}
   - LCTRL
   - R CLK
@@ -68,7 +68,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -85,8 +85,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - LEFT SHIFT
+  - ''
   - '-'
   - '4'
   - '5'
@@ -196,7 +196,7 @@ layers:
   - '&td_grave'
   - '!'
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -345,7 +345,7 @@ layers:
   - POWER
   - SHRUG
   - LGTM
-  - {t: GIT COMMIT, type: held}
+  - GIT COMMIT
   - ''
   - BRIGHTNESS INC
   - {t: BT, h: '0'}
@@ -450,7 +450,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: RETURN, type: held}
+  - RETURN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
