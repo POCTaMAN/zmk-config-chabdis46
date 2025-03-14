@@ -94,24 +94,24 @@
 // ├────────────────┼──────────────┼─────────────────────────────┼──────────────────────────────────┼──────────────────────┼────────┤  ├────────────────┼─────────────────────────┼──────────────────────────────────────┼────────────────────────────────────┼────────────────────────┼──────────────┤
     &kp BACKSLASH      &kp Q           &kp W                          &kp E                              &kp R                  &kp T       &kp Y             &kp U                   &kp I                                   &kp O                                &kp P                    &kp LEFT_BRACKET
 // ├────────────────┼──────────────┼─────────────────────────────┼──────────────────────────────────┼──────────────────────┼────────┤  ├────────────────┼─────────────────────────┼──────────────────────────────────────┼────────────────────────────────────┼────────────────────────┼──────────────┤
-    &hm_left LCMD TAB  &kp A         &kp S                          &hm_left LCTRL D                   &hm_left LEFT_SHIFT F  &kp G       &kp H             &hm_right RIGHT_SHIFT J &hm_right RCTRL K                         &kp L                                &kp SEMICOLON            &kp SINGLE_QUOTE
+    &hm_left LCMD TAB  &kp A         &kp S                            &kp D                             &lp F                   &kp G       &kp H             &kp J                   &kp K                                   &kp L                                &kp SEMICOLON            &kp SINGLE_QUOTE
 // ├────────────────┼──────────────┼─────────────────────────────┼──────────────────────────────────┼──────────────────────┼────────┤  ├────────────────┼─────────────────────────┼──────────────────────────────────────┼────────────────────────────────────┼────────────────────────┼──────────────┤
-    &kp C_AC_SEARCH    &kp Z           &kp X                          &kp C                              &kp V                  &kp B       &kp N             &kp M                   &kp COMMA                               &kp PERIOD                           &kp KP_SLASH             &kp RIGHT_BRACKET
+    &kp C_AC_SEARCH    &kp Z           &kp X                          &kp C                              &kp V                  &kp B       &kp N             &kp M                   &kp COMMA                               &kp PERIOD                           &kp FSLH                 &kp RIGHT_BRACKET
 // ╰────────────────┴──────────────┴─────────────────────────────┼──────────────────────────────────┼──────────────────────┼────────┤  ├────────────────┼─────────────────────────┼──────────────────────────────────────┴────────────────────────────────────┴────────────────────────┴──────────────╯
-                                                                               &td_cursor    &lt 1 RETURN       &mkp LCLK             &lt 1 RETURN      &lt 2 SPACE
-                                                                                             &kp LCTRL          &mkp RCLK                &kp ENTER
+                                                                               &td_cursor    &lt 1 RETURN       &mkp LCLK                &kp LEFT_SHIFT      &lt 2 SPACE
+                                                                                             &kp LCTRL          &mkp RCLK                &kp LEFT_CONTROL
                                                                           // ╰─────────────┴──────────────────┴────────╯               ╰────────────────┴──────────────╯
             >;
         };
 
         NUM {
             bindings = <
-&trans   &none  &none  &none  &none          &none          &none      &none   &none   &none   &none       &trans
-&trans   &none  &none  &none  &none          &none          &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COMMA   &none
-&trans   &none  &none  &none  &kp LEFT_SHIFT &none          &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0      &trans
-&none    &kp LC(Z)  &none  &kp LC(C)  &kp LC(V)  &kp SPACE      &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp PERIOD  &none
-                       &none  &none          &trans         &kp DOT    &kp N0
-                              &none          &trans         &kp DOT
+&trans   &none      &none  &none      &none          &none          &none      &none   &none   &none   &none       &trans
+&trans   &none      &none  &none      &none          &none          &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COMMA   &none
+&trans   &kp LC(A)  &none  &none      &kp LEFT_SHIFT &kp LC(PRCNT)  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0      &trans
+&none    &kp LC(Z)  &none  &kp LC(C)  &kp LC(V)      &kp SPACE      &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp PERIOD  &none
+                       &none  &none          &kp LEFT_SHIFT         &kp LEFT_SHIFT    &kp N0
+                              &none          &trans                 &kp DOT
             >;
         };
 
@@ -120,9 +120,9 @@
 
 &studio_unlock  &none   &none   &kp F3  &none   &none     &detach_session  &create_or_attach  &next_pane        &show_sessions  &sync_panes       &none
 &none           &none   &none   &none   &none   &none     &kp PG_UP        &kp HOME           &kp UP_ARROW      &kp END         &sync_panes       &none
-&trans          &trans  &trans  &trans  &trans  &none     &kp PAGE_DOWN    &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW &kp DELETE        &none
-&none           &none   &none   &kp LC(C)   &none   &none     &kp CAPSLOCK     &kp HOME           &kp PG_DN         &kp PG_UP       &kp END           &none
-                                &none   &none   &trans    &trans   &trans
+&trans          &kp LC(A)  &trans  &trans  &trans  &none     &kp PAGE_DOWN    &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW &kp DELETE        &none
+&none           &kp LC(Z)   &none   &kp LC(C)   &kp LC(V)   &none     &kp CAPSLOCK     &kp HOME           &kp PG_DN         &kp PG_UP       &kp END           &none
+                                &none   &none   &kp LEFT_SHIFT    &trans   &trans
                                         &none   &trans    &trans
             >;
         };
