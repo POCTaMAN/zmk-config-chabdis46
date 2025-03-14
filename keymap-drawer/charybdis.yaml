@@ -46,7 +46,7 @@ layers:
   - M
   - ','
   - .
-  - '?'
+  - KP SLASH
   - ']'
   - SCRL SLOW
   - {t: RETURN, h: NUM}
