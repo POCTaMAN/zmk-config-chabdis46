@@ -94,10 +94,10 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - ''
+  - Ctl+ Z
   - ''
-  - ''
-  - ''
-  - BACK SPACE
+  - Ctl+ C
+  - Ctl+ V
   - SPACE
   - '='
   - '1'
